@@ -24,7 +24,7 @@
 
 
         <h2>Perfil Profesional</h2>
-        <p>[Escribe un breve resumen de tu perfil profesional, habilidades principales o tu objetivo profesional]</p>
+        <p>Soy un profesional técnico en sistemas con una sólida formación en el desarrollo web, especializado en HTML, CSS y JavaScript. Cuento con experiencia en la creación y mantenimiento de sitios web funcionales y visualmente atractivos, implementando soluciones eficientes y escalables para mejorar la experiencia del usuario. Mi enfoque es resolver problemas de manera efectiva, optimizar procesos y garantizar la compatibilidad entre diferentes navegadores y dispositivos. Mis competencias incluyen la capacidad de gestionar servidores, solucionar problemas técnicos, administrar bases de datos, y realizar tareas de soporte y mantenimiento de sistemas operativos.</p>
 
         <h2>Experiencia Laboral</h2>
         <ul>
@@ -42,13 +42,18 @@
             <li>
                 <strong>Institución:</strong> El Servicio Nacional de Aprendizaje SENA  <br>
                 <strong>Título:</strong> TECNICO EN SISTEMAS<br>
-                <strong>Año:</strong> 14/04/2020
+                <strong>Año:</strong> 14/04/2020<br>
+                <button class="ver-certificado" data-documento="diploma-sistema" onclick="mostrarCertificado('diploma-sistema.jpg')" style="transition: transform 0.3s; width: 100px; height: 50px; margin-top: 10px;" onmouseover="ampliarBoton(this)" onmouseout="restaurarBoton(this)">
+                    <img src="./diploma-sistema.jpg" alt="diploma sistema" style="width: 100%; height: 100%;">
+                </button>
             </li>
-
             <li>
                 <strong>Institución:</strong> Institucion Educatva N° 11 Sede El Carmen <br>
-                <strong>Título:</strong> Bachiller A cademico<br>
-                <strong>Año:</strong> 08/12/2017
+                <strong>Título:</strong> Bachiller Academico<br>
+                <strong>Año:</strong> 08/12/2017<br>
+                <button class="ver-certificado" data-documento="diploma-bachiller" onclick="mostrarCertificado('diploma-bachiller.jpg')" style="transition: transform 0.3s; width: 100px; height: 50px; margin-top: 10px;" onmouseover="ampliarBoton(this)" onmouseout="restaurarBoton(this)">
+                    <img src="./diploma-bachiller.jpg" alt="Certificado bachiller" style="width: 100%; height: 100%;">
+                </button>
             </li>
             <!-- Añade más estudios si es necesario -->
         </ul>
@@ -57,15 +62,47 @@
         <ul>
             <li>
                 PROGRAMACIÓN BÁSICA
-                <button class="ver-certificado" data-documento="diploma-programacion-basica"
-                src="./diploma-programacion-basica.pdf">Ver Certificado</button>
+                <button class="ver-certificado" data-documento="diploma-programacion-basica" onclick="mostrarCertificado('diploma-programacion-basica.jpg')" style="transition: transform 0.3s; width: 100px; height: 50px;" onmouseover="ampliarBoton(this)" onmouseout="restaurarBoton(this)">
+                    <img src="./diploma-programacion-basica.jpg" alt="Certificado Programación Básica" style="width: 100%; height: 100%;">
+                </button>
             </li>
-            <li>MANEJO DE HERRAMIENTAS MICROSOFT OFFICE 2016:EXCEL <button>cerficado</button></li>
-            <li>METODOLOGIA DE LA PROGRAMACION DE SISTEMAS INFORMATICOS</li>
-            <li>APLICACION DE LA CALIDAD DEL SOFTWARE EN EL PROCESO DE DESARROLLO</li>
-            <li>FUNDAMENTOS DE REDES DE DATOS </li>
-            <!-- Añade más habilidades si es necesario -->
+            <li>
+                MANEJO DE HERRAMIENTAS MICROSOFT OFFICE 2016: EXCEL
+                <button class="ver-certificado" data-documento="diploma-excel" onclick="mostrarCertificado('diploma-excel.jpg')" style="transition: transform 0.3s; width: 100px; height: 50px;" onmouseover="ampliarBoton(this)" onmouseout="restaurarBoton(this)">
+                    <img src="./diploma-excel.jpg" alt="Certificado Excel" style="width: 100%; height: 100%;">
+                </button>
+            </li>
+            <li>
+                METODOLOGÍA DE LA PROGRAMACIÓN DE SISTEMAS INFORMÁTICOS
+                <button class="ver-certificado" data-documento="diploma-metodologia" onclick="mostrarCertificado('diploma-metodologia.jpg')" style="transition: transform 0.3s; width: 100px; height: 50px;" onmouseover="ampliarBoton(this)" onmouseout="restaurarBoton(this)">
+                    <img src="./diploma-metodologia.jpg" alt="Certificado Metodología" style="width: 100%; height: 100%;">
+                </button>
+            </li>
+            <li>
+                APLICACIÓN DE LA CALIDAD DEL SOFTWARE EN EL PROCESO DE DESARROLLO
+                <button class="ver-certificado" data-documento="diploma-calidad" onclick="mostrarCertificado('diploma-calidad.jpg')" style="transition: transform 0.3s; width: 100px; height: 50px;" onmouseover="ampliarBoton(this)" onmouseout="restaurarBoton(this)">
+                    <img src="./diploma-calidad.jpg" alt="Certificado Calidad del Software" style="width: 100%; height: 100%;">
+                </button>
+            </li>
+            <li>
+                FUNDAMENTOS DE REDES DE DATOS
+                <button class="ver-certificado" data-documento="diploma-redes" onclick="mostrarCertificado('diploma-redes.jpg')" style="transition: transform 0.3s; width: 100px; height: 50px;" onmouseover="ampliarBoton(this)" onmouseout="restaurarBoton(this)">
+                    <img src="./diploma-redes.jpg" alt="Certificado Redes de Datos" style="width: 100%; height: 100%;">
+                </button>
+            </li>
         </ul>
+        
+        <script src="certificados.js"></script>
+        <script>
+            function ampliarBoton(boton) {
+                boton.style.transform = "scale(1.5)";
+            }
+        
+            function restaurarBoton(boton) {
+                boton.style.transform = "scale(1)";
+            }
+        </script>
+        
 
         <h2>Idiomas</h2>
         <ul>
